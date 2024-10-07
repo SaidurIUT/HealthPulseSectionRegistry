@@ -5,7 +5,7 @@ FROM gradle:8-jdk21 AS build
 WORKDIR /app
 
 # Copy the Gradle wrapper and build.gradle files
-COPY build.gradle settings.gradle gradle.properties ./
+COPY build.gradle settings.gradle ./
 
 # Copy the source code
 COPY src ./src
